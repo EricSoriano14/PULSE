@@ -1,0 +1,196 @@
+.students-status-page {
+    /* Students status page container */
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.students-status-page .page-header {
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.students-status-page .page-header > div:first-child {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.students-status-page .page-header > div:last-child {
+    min-width: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .students-status-page .page-header > div:last-child {
+        width: auto;
+        flex: 0 0 auto;
+    }
+}
+
+.students-toolbar {
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap: 12px;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.students-filter { 
+    display:flex; 
+    align-items:flex-end; 
+    gap:10px; 
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .students-filter {
+        width: auto;
+    }
+}
+.students-filter-label { 
+    display:flex; 
+    flex-direction:column; 
+    gap:6px; 
+    font-size: 13px; 
+    color:#374151;
+    min-width: 0;
+    flex: 1 1 auto;
+}
+.students-filter select {
+    min-width: 0;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-sizing: border-box;
+}
+.search-input {
+    min-width: 0;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.search-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #2f6f3a;
+    background: #2f6f3a;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+    height: fit-content;
+    align-self: flex-end;
+}
+.search-btn:hover {
+    background: #24522b;
+}
+.clear-filter { margin-left: 10px; color:#2f6f3a; text-decoration:none; font-size: 13px; }
+.btn-sm { padding: 6px 10px; border-radius: 8px; }
+.muted { color:#9ca3af; }
+
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+.student-card {
+    display: block;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+    color: inherit;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+.student-card:hover { border-color: #cbd5e1; }
+.student-title { font-weight: 800; font-size: 16px; margin-bottom: 0; }
+.student-meta { display: grid; gap: 8px; margin-bottom: 12px; }
+.student-row { 
+    display: grid; 
+    grid-template-columns: 100px 1fr; 
+    gap: 8px; 
+    align-items: start;
+}
+.student-label { 
+    color:#6b7280; 
+    font-size: 13px; 
+    font-weight: 500;
+}
+.student-value { 
+    font-weight: 600; 
+    font-size: 13px; 
+    color:#111827;
+    word-break: break-word;
+}
+.student-actions { margin-top: 12px; display:flex; justify-content:flex-end; }
+
+.safety-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.safety-safe {
+    color: #166534;
+    background: #ecfdf3;
+}
+.safety-at_risk {
+    color: #b91c1c;
+    background: #fef2f2;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+.btn-success {
+    background: #10b981;
+    color: #fff;
+}
+.btn-success:hover {
+    background: #059669;
+}
+.btn-danger {
+    background: #ef4444;
+    color: #fff;
+}
+.btn-danger:hover {
+    background: #dc2626;
+}
+.btn-secondary {
+    background: #6b7280;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #4b5563;
+}

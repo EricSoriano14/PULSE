@@ -1,0 +1,13 @@
+/* Settings page container */
+.settings-page {
+    width: 100%;
+    margin: 0;
+}
+
+/* Settings: custom file input */
+.avatar-row { display:flex; align-items:center; gap:12px; }
+.file-picker { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.file-input { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+.file-name { color:#6b7280; font-size:12px; }
+.panel-divider { height:1px; background:#e5e7eb; margin:16px 0; }
+.danger-zone .subtext { margin-top:0; }

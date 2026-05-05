@@ -1,0 +1,285 @@
+/* Page wrapper */
+.ann-page{
+    max-width: 1100px;
+}
+
+/* Head */
+.ann-page-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:14px;
+}
+
+.ann-title{
+    margin:0;
+    font-size:28px;
+    font-weight:800;
+    color:#111827;
+}
+
+.ann-subtitle{
+    margin:6px 0 0 0;
+    color:#6b7280;
+    font-size:14px;
+}
+
+.ann-muted{ color:#6b7280; font-size:13px; }
+
+/* Alerts */
+.ann-alert{
+    border-radius:12px;
+    padding:10px 12px;
+    margin-bottom:12px;
+    border:1px solid transparent;
+}
+.ann-alert-success{
+    background:#ecfdf5;
+    color:#065f46;
+    border-color:#a7f3d0;
+}
+.ann-alert-danger{
+    background:#fef2f2;
+    color:#991b1b;
+    border-color:#fecaca;
+}
+.ann-alert-warn{
+    background:#fff7ed;
+    color:#9a3412;
+    border-color:#fed7aa;
+}
+.ann-alert-title{ font-weight:800; margin-bottom:6px; }
+.ann-alert-list{ margin:0; padding-left:18px; }
+
+/* Card */
+.ann-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    box-shadow:0 10px 24px rgba(0,0,0,.06);
+    padding:18px;
+}
+
+.ann-card-head{
+    margin-bottom:12px;
+}
+.ann-card-title{
+    margin:0;
+    font-size:18px;
+    font-weight:800;
+    color:#111827;
+}
+.ann-card-subtitle{
+    margin:6px 0 0 0;
+    font-size:13px;
+    color:#6b7280;
+}
+
+/* Form */
+.ann-form-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:14px;
+    margin-top:14px;
+}
+
+.ann-form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:700;
+    color:#374151;
+    font-size:14px;
+}
+
+.ann-form-group small{
+    display:block;
+    margin-top:6px;
+    color:#6b7280;
+    font-size:12.5px;
+}
+
+.ann-form-group input[type="file"],
+.ann-form-group select,
+.ann-form-group textarea{
+    width:100%;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    padding:10px 12px;
+    font-size:14px;
+    outline:none;
+    box-sizing:border-box;
+    background:#fff;
+}
+
+.ann-form-group textarea{
+    resize:vertical;
+    min-height:110px;
+}
+
+.ann-form-group input:focus,
+.ann-form-group select:focus,
+.ann-form-group textarea:focus{
+    border-color:#2f6f3a;
+    box-shadow:0 0 0 3px rgba(47,111,58,.18);
+}
+
+.ann-form-group-full{
+    grid-column: 1 / -1;
+}
+
+.ann-form-actions{
+    display:flex;
+    gap:10px;
+    margin-top:14px;
+}
+
+/* Buttons */
+.ann-btn{
+    border:none;
+    cursor:pointer;
+    border-radius:10px;
+    padding:10px 14px;
+    font-weight:700;
+    font-size:14px;
+    transition: transform .04s ease, background .15s ease, border-color .15s ease;
+}
+
+.ann-btn:active{
+    transform: scale(.98);
+}
+
+.ann-btn-primary{
+    background:#2f6f3a;
+    color:#fff;
+}
+.ann-btn-primary:hover{
+    background:#24522b;
+}
+
+.ann-btn-ghost{
+    background:#fff;
+    border:1px solid #d1d5db;
+    color:#374151;
+}
+.ann-btn-ghost:hover{
+    background:#f9fafb;
+}
+
+.ann-btn-danger{
+    background:#b91c1c;
+    color:#fff;
+}
+.ann-btn-danger:hover{
+    background:#991b1b;
+}
+
+/* List */
+.ann-list{
+    margin-top:16px;
+}
+
+.ann-list-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:16px 0 10px 0;
+    gap:12px;
+}
+
+.ann-list-title{
+    margin:0;
+    font-size:18px;
+    font-weight:800;
+    color:#111827;
+}
+
+.ann-post{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    padding:14px;
+    margin-bottom:12px;
+}
+
+.ann-post-canceled{
+    opacity:.75;
+}
+
+.ann-post-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+}
+
+.ann-post-badges{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.ann-pill{
+    display:inline-flex;
+    align-items:center;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:800;
+    background:#f3f4f6;
+    color:#111827;
+}
+
+.ann-pill-success{
+    background:#ecfdf5;
+    color:#065f46;
+    border:1px solid #a7f3d0;
+}
+.ann-pill-danger{
+    background:#fef2f2;
+    color:#991b1b;
+    border:1px solid #fecaca;
+}
+
+.ann-date{
+    color:#6b7280;
+    font-size:12.5px;
+    margin-bottom:10px;
+}
+
+.ann-image{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    margin:10px 0;
+    object-fit:cover;
+}
+
+.ann-desc{
+    color:#111827;
+    font-size:14px;
+    line-height:1.45;
+}
+
+.ann-empty{
+    background:#fff;
+    border:1px dashed #d1d5db;
+    color:#6b7280;
+    border-radius:14px;
+    padding:18px;
+}
+
+.ann-pagination{
+    margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 820px){
+    .ann-form-grid{
+        grid-template-columns: 1fr;
+    }
+}
